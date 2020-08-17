@@ -35,3 +35,5 @@ if(STATIC)
 endif()
 
 set_target_properties(hlsdl PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
+set_target_properties(hlsdl PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
