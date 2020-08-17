@@ -13,7 +13,7 @@ jobs:
       run: |
         mkdir build
         cd build
-        cmake ../src
+        cmake ..
         cmake --build .
     - name: download testfile
       run: build/hlsdl -b -o test.ts "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
@@ -34,7 +34,7 @@ jobs:
       run: |
         mkdir build
         cd build
-        cmake ../src
+        cmake ..
         cmake --build .
     - name: download testfile
       run: build/hlsdl -b -o test.ts "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
@@ -60,7 +60,7 @@ jobs:
       run: |
           mkdir build
           cd build
-          cmake -G "MSYS Makefiles" ../src
+          cmake -G "MSYS Makefiles" ..
           cmake --build .
     - name: download testfile
       run: build/hlsdl -b -o test.ts "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
