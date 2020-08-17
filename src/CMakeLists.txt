@@ -5,7 +5,7 @@ if(STATIC)
   set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
   set(OPENSSL_USE_STATIC_LIBS TRUE)
   if(WIN32)
-    add_compile_definitions(CURL_STATICLIB)
+    add_definitions(-DCURL_STATICLIB)
   endif()
 endif()
 
